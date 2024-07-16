@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunting Calculator Prototype</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stunting Calculator</h2>
+        <form id="registrationForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" step="0.01" id="weight" name="weight" required>
+
+            <label>Jenis Kelamin:</label>
+            <div class="gender-group">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required> Pria
+                </label>
+                <!-- <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Wanita
+                </label> -->
+            </div>
+            
+            <input type="submit" value="Submit">
+
+            <p id="mini-note">prototype calculator by rama arya</p>
+        </form>
+    </div>
+    <div id="myDialog" class="dialog">
+        <div class="dialog-content">
+            <p id="dialog-name"></p>
+            <p id="dialog-birthdate"></p>
+            <p id="dialog-weight"></p>
+            <p id="dialog-message"></p>
+            <button id="closeDialog">Tutup</button>
+        </div>
+    </div>
+    <script src="script/status.js"></script>
+    <script src="script/maleCalculate.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>
